@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#00FFFF, #00CCFF);
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+.login h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.login .login_box {
+    /* 相对定位 */
+    position: relative;
+    width: 100%;
+}
+
+.login .login_box input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+}
+
+.login .login_box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.login .login_box input:focus + label,
+.login .login_box input:valid + label {
+    top: -20px;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.login .btn {
+    overflow: hidden;
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    background-color: #333399;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.login .btn:hover {
+    color: black;
+    border-radius: 5px;
+    background-color: pink;
+}
+
